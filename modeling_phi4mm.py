@@ -12,6 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#Freez lines 114,505.
 
 """ PyTorch Phi-4-MM model."""
 import math
@@ -110,7 +111,8 @@ class Phi4MMImageEmbedding(nn.Module):
         self.use_hd_transform = kwargs.get('use_hd_transform', False)
         self.with_learnable_separator = kwargs.get('with_learnable_separator', False)
         self.hd_transform_order = kwargs.get('hd_transform_order', 'glb_sub')
-        self.freeze_img_processor = kwargs.get('freeze_img_processor', False)
+        #freeze_img_processor is set to True 
+        self.freeze_img_processor = kwargs.get('freeze_img_processor', True)
         self.crop_size = kwargs.get('crop_size', 336)
         logger.info(f'freeze_img_processor = {self.freeze_img_processor}')
 
@@ -500,8 +502,8 @@ class Phi4MMAudioEmbedding(nn.Module):
         assert audio_dim_out is not None, "Remember to set values for audio_dim_out"
         self.audio_dim_out = audio_dim_out
         self.audio_dim_in = n_mels
-
-        self.freeze_audio_processor = kwargs.get('freeze_audio_processor', False)
+        #freeze_audio_processor is set to True
+        self.freeze_audio_processor = kwargs.get('freeze_audio_processor', True)
         logger.info(f'freeze_audio_processor = {self.freeze_audio_processor}')
 
         self.downsample_rate = kwargs.get('downsample_rate', 1)
