@@ -1,4 +1,5 @@
-# projectDL2025
-Course project for EC523: Deep Learning (Fall 2025, Boston University). This project, “Real Time Image Classification for Generalized Moderation of Content,” implements and evaluates deep learning models for automated detection and moderation of visual content in real time.
+BLIP Based Image Classification with Hessian Sharpness Analysis
 
-classifierHeadNaive - a preliminary implementation of the new decoder which will produce a set of probabilities. If any probability is high enough, it will result in a nonzero vector output which will be used to moderate the content
+Project Description: Our project implements an image classification pipeline using a BLIP vision language model as a frozen feature extractor, paired with a linear classifier trained on top of BLIP image embeddings. Additionally, the project computes Hessian Sharpness (largest eigenvalue of the Hessian) during the training to analyze loss landscape flatness. The project also integrates BLIP captioning, enabling both classification and caption generation for inference.
+
+Table of Content: 
