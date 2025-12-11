@@ -9,6 +9,8 @@ Table of Content:
 
   
 References
+
+
 Hugging face BLIP model - The BLIP model used in final code- by Salesforce https://huggingface.co/Salesforce/blip-image-captioning-base
 
 
