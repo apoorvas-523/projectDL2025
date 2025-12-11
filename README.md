@@ -10,6 +10,7 @@ Table of Content:
   
 References
 Hugging face BLIP model - The BLIP model used in final code- by Salesforce https://huggingface.co/Salesforce/blip-image-captioning-base
+
 Downloaded only 100 images out of the 25,000 Cat Images by Tamilselvan Arjunan https://www.kaggle.com/datasets/tamilselvanarjunan/image1?resource=download
 Downloaded only 100 random images from here https://www.kaggle.com/datasets/lprdosmil/unsplash-random-images-collection?resource=download
 
