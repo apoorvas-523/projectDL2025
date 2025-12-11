@@ -4,17 +4,12 @@ Project Description: Our project implements an image classification pipeline usi
 
 Table of Content: 
 
-- BLIPimageclassfication (v.1.).ipynb: The main file. After transferring the dataset files to the directory ALL in your google drive, lay out the files in the structure below
+- ALL_SPLIT: The main dataset file. After transferring the dataset files to the directory in your google drive, lay out is divided into training(70%), validation(15%) and test(15%).
+- Final version BLIP deep learning project .ipynb - The final code
 
-                         ___________
-                        |    ALL    |
-                        |___________|
-                    __________|__________
-                   |                     |
-              ___________           ___________
-             |    cat    |         |  non-cat  |
-             |___________|         |___________|
+  
+References
+Hugging face BLIP model - The BLIP model used in final code- by Salesforce https://huggingface.co/Salesforce/blip-image-captioning-base
+Downloaded only 100 images out of the 25,000 Cat Images by Tamilselvan Arjunan https://www.kaggle.com/datasets/tamilselvanarjunan/image1?resource=download
+Downloaded only 100 random images from here https://www.kaggle.com/datasets/lprdosmil/unsplash-random-images-collection?resource=download
 
-
-
-- 
